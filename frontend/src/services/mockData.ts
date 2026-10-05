@@ -147,3 +147,4 @@ export const DEFAULT_GALLERY = [
     caption: 'Kegiatan 4'
   }
 ];
+
