@@ -4,7 +4,7 @@
       <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
         <!-- Header -->
         <div class="bg-[#0a1628] px-8 py-8 flex flex-col items-center gap-3">
-          <img src="/assets/logo-csirt-D9xGTNl_.png" alt="BIG-CSIRT" class="w-16 h-16 object-contain" />
+          <img :src="getAssetUrl('assets/logo-csirt-D9xGTNl_.png')" alt="BIG-CSIRT" class="w-16 h-16 object-contain" />
           <div class="text-center">
             <h1 class="font-grotesk font-extrabold text-white text-2xl m-0">BIG-CSIRT</h1>
             <p class="font-geist text-blue-300 text-xs mt-1 uppercase tracking-widest m-0">Panel Administrasi</p>
@@ -67,6 +67,7 @@
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { useAuthStore } from '@/stores/authStore';
+import { getAssetUrl } from '@/utils/assets';
 
 const router = useRouter();
 const auth = useAuthStore();

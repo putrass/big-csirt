@@ -5,7 +5,7 @@
       <q-toolbar class="px-6 h-16">
         <q-btn flat dense round icon="menu" @click="drawer = !drawer" class="mr-2" />
         <div class="flex items-center gap-3">
-          <img src="/assets/logo-csirt-D9xGTNl_.png" alt="BIG-CSIRT" class="w-8 h-8 object-contain" />
+          <img :src="getAssetUrl('assets/logo-csirt-D9xGTNl_.png')" alt="BIG-CSIRT" class="w-8 h-8 object-contain" />
           <div class="flex flex-col">
             <span class="font-grotesk font-extrabold text-base leading-tight">BIG-CSIRT</span>
             <span class="font-geist text-[10px] text-blue-300 uppercase tracking-wider">Panel Administrasi</span>
@@ -32,7 +32,9 @@
     <!-- Sidebar -->
     <q-drawer v-model="drawer" show-if-above bordered class="bg-[#0a1628] text-gray-300" :width="240">
       <div class="p-5 border-b border-gray-800 flex flex-col items-center justify-center gap-2">
-        <img src="/assets/logo-big-crCCDRIX.png" alt="BIG" class="max-w-[140px] w-full h-auto object-contain" />
+        <div class="bg-white p-2 rounded-lg flex items-center justify-center max-w-[150px]">
+          <img :src="getAssetUrl('assets/logo-big-crCCDRIX.png')" alt="BIG" class="w-full h-auto object-contain" />
+        </div>
         <span class="text-[11px] font-medium text-gray-400 text-center tracking-wide">Badan Informasi Geospasial</span>
       </div>
 
@@ -65,6 +67,7 @@
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { useAuthStore } from '@/stores/authStore';
+import { getAssetUrl } from '@/utils/assets';
 
 const drawer = ref(true);
 const auth = useAuthStore();
