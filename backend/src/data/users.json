@@ -1,0 +1,10 @@
+[
+  {
+    "id": "1",
+    "name": "Admin CSIRT",
+    "email": "admin@komdigi.go.id",
+    "password": "$2b$10$B2fZ0Sp2UYjfpxOCyse4.uyVawnmGCF/6HgrCWSnIcBWlrOG88FKO",
+    "role": "user",
+    "createdAt": "2024-01-01T00:00:00Z"
+  }
+]

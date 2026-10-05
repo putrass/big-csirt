@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "title": "Kerentanan Kritis Linux \"Copy Fail\"",
+    "image": "https://csirt.komdigi.go.id/storage/uploads/contents/69fdb85e1473d_croped.png",
+    "slug": "kerentanan-kritis-linux-copy-fail"
+  },
+  {
+    "id": "2",
+    "title": "Gotenberg Rentan SSRF via Webhook URL",
+    "image": "https://csirt.komdigi.go.id/storage/uploads/contents/69faec015061f_croped.png",
+    "slug": "gotenberg-rentan-ssrf-via-webhook-url"
+  },
+  {
+    "id": "3",
+    "title": "Eksploitasi Git Worktree pada Claude Code",
+    "image": "https://csirt.komdigi.go.id/storage/uploads/contents/69f048174d8c5_croped.png",
+    "slug": "eksploitasi-git-worktree-pada-claude-code"
+  },
+  {
+    "id": "4",
+    "title": "Kerentanan Kritis Apache Kafka Ekspos Sistem",
+    "image": "https://csirt.komdigi.go.id/storage/uploads/contents/324409ea-48a9-40c7-a698-1629e9f3496d_apache-kafka-vulnerabilities-expose-authentication-bypass.png",
+    "slug": "kerentanan-kritis-apache-kafka-ekspos-sistem-anda"
+  },
+  {
+    "id": "5",
+    "title": "Waspada RCE di Microsoft SharePoint dan Windows TCP/IP",
+    "image": "https://csirt.komdigi.go.id/storage/uploads/contents/531a50e7-f29b-4c00-a8ec-6d7a7fa060e5_microsoft-sharepoint-windows-tcpip-rce-windows-ike-service-extensions-rce-vulnerability.png",
+    "slug": "waspada-rce-di-microsoft-sharepoint-dan-windows-tcpip"
+  },
+  {
+    "id": "6",
+    "title": "Ancaman Nix Sandbox Escape yang Menimpa File Sistem",
+    "image": "https://csirt.komdigi.go.id/storage/uploads/contents/9c7dbf50-b8bb-46c1-a7c0-759641641c83_critical-nix-sandbox-escape-overwrites-sensitive-system-files.png",
+    "slug": "ancaman-nix-sandbox-escape-yang-menimpa-file-sistem"
+  },
+  {
+    "id": "7",
+    "title": "Authentication Bypass di Payload CMS",
+    "image": "https://csirt.komdigi.go.id/storage/uploads/contents/b44af70a-c0bc-40ba-92bd-bb4ab264b2f3_payload-cms-password-reset-vulnerabilities.jpg",
+    "slug": "authentication-bypass-di-payload-cms"
+  },
+  {
+    "id": "8",
+    "title": "Kerentanan Nginx UI Memungkinkan Pencurian Data Secara Terbuka",
+    "image": "https://csirt.komdigi.go.id/storage/uploads/contents/8f9aa02a-1094-4d5a-9f84-5764ffdbe96b_critical-nginx-ui-flaw-exposes-backup-data-without-authentication-2.png",
+    "slug": "kerentanan-nginx-ui-memungkinkan-pencurian-data-secara-terbuka"
+  },
+  {
+    "id": "9",
+    "title": "Django Security Update Fixes DoS and Permission Issues",
+    "image": "https://csirt.komdigi.go.id/storage/uploads/contents/bd78c4ce-4aaa-4385-bfdb-68730b56a261_django-vulner.png",
+    "slug": "django-security-update-fixes-dos-and-permission-issues"
+  },
+  {
+    "id": "10",
+    "title": "Pembaruan Keamanan Google Chrome Mengatasi Kerentanan Kritis",
+    "image": "https://csirt.komdigi.go.id/storage/uploads/contents/6a764450-e889-441e-a290-d77134aac2b8_pembaruan-keamanan-google-chrome-mengatasi-kerentanan-kritis.jpg",
+    "slug": "pembaruan-keamanan-google-chrome-mengatasi-kerentanan-kritis"
+  }
+]

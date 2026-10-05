@@ -1,0 +1,34 @@
+{
+  "visi-dan-misi": {
+    "title": "Visi dan Misi",
+    "body": "<h2>Visi</h2><p>Menjadi tim CSIRT terdepan dalam menjaga keamanan siber Indonesia.</p><h2>Misi</h2><ul><li>Melindungi infrastruktur digital Kementerian Komdigi</li><li>Membangun kapasitas keamanan siber nasional</li><li>Memberikan respons cepat terhadap insiden siber</li><li>Berkolaborasi dengan instansi terkait</li></ul>"
+  },
+  "tugas-dan-fungsi": {
+    "title": "Tugas dan Fungsi",
+    "body": "<h2>Tugas</h2><p>KOMDIGI CSIRT bertugas melakukan deteksi, analisis, dan respons terhadap insiden keamanan siber.</p><h2>Fungsi</h2><ul><li>Monitoring ancaman siber</li><li>Incident response</li><li>Koordinasi dengan instansi terkait</li><li>Edukasi keamanan siber</li></ul>"
+  },
+  "layanan": {
+    "title": "Layanan",
+    "body": "<h2>Layanan Kami</h2><ul><li>Vulnerability Assessment</li><li>Incident Response</li><li>Security Advisory</li><li>Bug Bounty Program</li><li>Threat Intelligence</li></ul>"
+  },
+  "capaian-dan-prestasi": {
+    "title": "Capaian dan Prestasi",
+    "body": "<h2>Capaian 2024</h2><ul><li>Menangani 1.200+ insiden siber</li><li>Berhasil mitigasi 500+ kerentanan kritis</li><li>Kolaborasi dengan 50+ instansi pemerintah</li></ul>"
+  },
+  "pgp-key": {
+    "title": "PGP Key",
+    "body": "<h2>PGP Public Key KOMDIGI-CSIRT</h2><pre>-----BEGIN PGP PUBLIC KEY BLOCK-----\nmQINBGQxxx...\n-----END PGP PUBLIC KEY BLOCK-----</pre>"
+  },
+  "tentang-kami": {
+    "title": "Tentang Kami",
+    "body": "<p>KOMDIGI CSIRT adalah tim tanggap darurat insiden keamanan siber Kementerian Komunikasi dan Digital Republik Indonesia.</p>"
+  },
+  "kebijakan-privasi": {
+    "title": "Kebijakan Privasi",
+    "body": "<p>KOMDIGI-CSIRT menjaga kerahasiaan data yang Anda sampaikan melalui website ini dan hanya menggunakannya untuk keperluan penanganan insiden keamanan siber.</p>"
+  },
+  "syarat-dan-ketentuan": {
+    "title": "Syarat dan Ketentuan",
+    "body": "<p>Dengan mengakses website ini, Anda menyetujui untuk menggunakan informasi yang tersedia secara bertanggung jawab dan sesuai peraturan perundang-undangan yang berlaku.</p>"
+  }
+}

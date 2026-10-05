@@ -1,0 +1,46 @@
+[
+  {
+    "id": "article-tes-ya",
+    "createdAt": "2026-10-05T06:41:38.103Z",
+    "title": "Tes Ya",
+    "slug": "tes-ya",
+    "category": "INSIDEN",
+    "type": "standard",
+    "date": "5 Oktober 2026",
+    "imageUrl": "http://localhost:3000/uploads/img-1791182490200-116826369.jpeg",
+    "description": "oaksdoaksdo",
+    "body": "asdokasdoaksdokadsko",
+    "image": "http://localhost:3000/uploads/img-1791182490200-116826369.jpeg",
+    "excerpt": "oaksdoaksdo"
+  },
+  {
+    "id": "1",
+    "title": "BIG-CSIRT Berhasil Menangani Web Defacement di BIG",
+    "category": "INSIDEN",
+    "date": "25 Mei 2025",
+    "description": "Tim respons cepat berhasil mengisolasi serangan dalam waktu kurang dari 2 jam dan memulihkan data geospasial kritis secara penuh...",
+    "imageUrl": "/assets/news-featured-DEHxhDd0.png",
+    "type": "featured",
+    "body": "<p>Tim respons cepat berhasil mengisolasi serangan dalam waktu kurang dari 2 jam dan memulihkan data geospasial kritis secara penuh. Insiden ini ditangani secara profesional sesuai SOP yang berlaku.</p>"
+  },
+  {
+    "id": "2",
+    "title": "Kolaborasi BSSN dan BIG-CSIRT dalam Penguatan Keamanan Infrastruktur",
+    "category": "KERJASAMA",
+    "date": "22 Mei 2025",
+    "description": "Kolaborasi strategis antara BSSN dan BIG-CSIRT untuk memperkuat keamanan infrastruktur.",
+    "imageUrl": "/assets/news-featured-DEHxhDd0.png",
+    "type": "standard",
+    "body": "<p>Kolaborasi strategis antara BSSN dan BIG-CSIRT untuk memperkuat keamanan infrastruktur informasi geospasial nasional.</p>"
+  },
+  {
+    "id": "3",
+    "title": "Waspada: Kampanye Phishing Targetkan Email Instansi Pemerintah",
+    "category": "WASPADA",
+    "date": "18 Mei 2025",
+    "description": "Kampanye phishing aktif menargetkan email resmi instansi pemerintah menggunakan domain palsu.",
+    "imageUrl": "/assets/news-featured-DEHxhDd0.png",
+    "type": "standard",
+    "body": "<p>Kampanye phishing aktif menargetkan email resmi instansi pemerintah menggunakan domain palsu .go.id. Dihimbau seluruh pegawai waspada.</p>"
+  }
+]

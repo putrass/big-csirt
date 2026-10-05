@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "date": "15 Mei 2025",
+    "cveId": "CVE-2025-24911",
+    "title": "Protection Mechanism Failure - Testing",
+    "severity": "Kritis",
+    "status": "Selesai",
+    "body": "<p>Kerentanan kritis pada mekanisme proteksi sistem yang memungkinkan eksekusi kode berbahaya tanpa otentikasi.</p>",
+    "advisoryId": "CVE-2025-24911"
+  },
+  {
+    "id": "2",
+    "date": "10 Mei 2025",
+    "cveId": "CVE-2025-30089",
+    "title": "Kerentanan pada Claude Code CLI dan Claude Agent SDK Masif Menggunakan Domain Palsu .go.id",
+    "severity": "Tinggi",
+    "status": "Aktif",
+    "body": "<p>Ditemukan upaya eksploitasi aktif memanfaatkan Claude Code CLI dan domain palsu untuk mengecoh pengguna.</p>"
+  },
+  {
+    "id": "3",
+    "date": "05 Mei 2025",
+    "cveId": "CVE-2025-18452",
+    "title": "Improper Privilege Management",
+    "severity": "Sedang",
+    "status": "Dalam Penanganan",
+    "body": "<p>Kelemahan pengelolaan hak akses pada sistem manajemen dokumen yang memungkinkan eskalasi hak istimewa.</p>"
+  }
+]

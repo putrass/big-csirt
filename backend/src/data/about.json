@@ -1,0 +1,14 @@
+{
+  "heroTitle": "BIG CSIRT",
+  "heroSubtitle": "BIG-CSIRT siap merespons dan menangani insiden keamanan siber di lingkungan BIG",
+  "announcement": "Waspada terhadap kampanye phishing yang menargetkan email instansi pemerintah menggunakan domain palsu .go.id. Laporkan segera jika menemukan kejanggalan!",
+  "title": "Tentang BIG-CSIRT",
+  "subtitle": "Badan Informasi Geospasial",
+  "body": [
+    "BIG-CSIRT adalah tim respons insiden keamanan siber yang berada di bawah Badan Informasi Geospasial (BIG). Kami bertugas melindungi infrastruktur teknologi informasi dan data geospasial nasional dari ancaman siber.",
+    "Dibentuk sesuai mandat keamanan siber nasional, BIG-CSIRT berkolaborasi dengan BSSN, instansi pemerintah, dan mitra internasional dalam ekosistem keamanan siber Indonesia."
+  ],
+  "logoSrc": "/assets/logo-csirt-D9xGTNl_.png",
+  "link": "/profil",
+  "linkText": "Pelajari Profil Lengkap"
+}

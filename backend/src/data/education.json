@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "title": "Cara Mengenali Email Phishing",
+    "description": "Langkah-langkah mudah mendeteksi email penipuan.",
+    "imageUrl": "/assets/edu-phishing-DCOW8l44.png",
+    "downloadUrl": "https://drive.google.com"
+  },
+  {
+    "id": "2",
+    "title": "Kalau Kena Hacking, kita harus ngapain.",
+    "description": "Panduan tanggap darurat saat akun atau sistem terindikasi disusupi.",
+    "imageUrl": "/assets/edu-hacking-bYfdzDsZ.png",
+    "downloadUrl": "https://drive.google.com"
+  },
+  {
+    "id": "3",
+    "title": "Web Defacement",
+    "description": "Apa itu defacement dan langkah pencegahannya.",
+    "imageUrl": "/assets/edu-defacement-C1fLWBZw.png",
+    "downloadUrl": "https://drive.google.com"
+  },
+  {
+    "id": "4",
+    "title": "Kok Jaringan nya lambat banget ya.",
+    "description": "Mengenali serangan DDoS dan pembebanan jaringan abnormal.",
+    "imageUrl": "/assets/edu-ddos-MDj7WsaY.png",
+    "downloadUrl": "https://drive.google.com"
+  },
+  {
+    "id": "5",
+    "title": "Data Breach / Kebocoran Data.",
+    "description": "Langkah penanganan dan pencegahan kebocoran data sensitif.",
+    "imageUrl": "/assets/edu-breach-9pshQO5v.png",
+    "downloadUrl": "https://drive.google.com"
+  },
+  {
+    "id": "6",
+    "title": "Infeksi Malware",
+    "description": "Panduan keamanan ketika mengalami infeksi malware.",
+    "imageUrl": "/assets/edu-malware-B7EvBYrY.png",
+    "downloadUrl": "https://drive.google.com"
+  }
+]

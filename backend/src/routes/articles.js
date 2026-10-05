@@ -1,0 +1,49 @@
+const router = require('express').Router();
+const { v4: uuidv4 } = require('uuid');
+const { read, write } = require('../utils/store');
+const { authMiddleware } = require('../middleware/auth');
+
+router.get('/', (req, res) => {
+  const items = read('articles');
+  if (req.query.type) {
+    return res.json(items.filter(i => i.type === req.query.type));
+  }
+  res.json(items);
+});
+
+router.get('/:slug', (req, res) => {
+  const items = read('articles');
+  const item = items.find(i => i.slug === req.params.slug);
+  if (!item) return res.status(404).json({ error: 'Not found' });
+  res.json(item);
+});
+
+router.post('/', authMiddleware, (req, res) => {
+  const items = read('articles');
+  const newItem = { id: uuidv4(), createdAt: new Date().toISOString(), ...req.body };
+  items.unshift(newItem); // Newest first
+  write('articles', items);
+  res.status(201).json(newItem);
+});
+
+router.put('/:id', authMiddleware, (req, res) => {
+  const items = read('articles');
+  const index = items.findIndex(i => i.id === req.params.id || i.id === parseInt(req.params.id));
+  if (index === -1) return res.status(404).json({ error: 'Not found' });
+  
+  items[index] = { ...items[index], ...req.body };
+  write('articles', items);
+  res.json(items[index]);
+});
+
+router.delete('/:id', authMiddleware, (req, res) => {
+  let items = read('articles');
+  const initialLength = items.length;
+  items = items.filter(i => i.id !== req.params.id && i.id !== parseInt(req.params.id));
+  if (items.length === initialLength) return res.status(404).json({ error: 'Not found' });
+  
+  write('articles', items);
+  res.json({ message: 'Deleted successfully' });
+});
+
+module.exports = router;

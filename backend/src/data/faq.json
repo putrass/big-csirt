@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "question": "Apa itu KOMDIGI CSIRT?",
+    "answer": "KOMDIGI CSIRT adalah Computer Security Incident Response Team yang beroperasi di lingkungan Kementerian Komunikasi dan Digital RI."
+  },
+  {
+    "id": "2",
+    "question": "Bagaimana cara melaporkan insiden siber?",
+    "answer": "Anda dapat melaporkan insiden melalui email csirt@komdigi.go.id atau melalui fitur Lapor Temuan di website ini."
+  },
+  {
+    "id": "3",
+    "question": "Apa itu Bug Bounty Program?",
+    "answer": "Bug Bounty Program adalah program yang memberikan penghargaan kepada peneliti keamanan yang berhasil menemukan dan melaporkan kerentanan pada sistem kami."
+  },
+  {
+    "id": "4",
+    "question": "Berapa lama waktu respons terhadap laporan kerentanan?",
+    "answer": "Kami berkomitmen untuk merespons setiap laporan dalam waktu 3x24 jam kerja."
+  },
+  {
+    "id": "17ccfa3c-c69e-4176-ba91-e41927446ee2",
+    "question": "tes",
+    "answer": "tes"
+  }
+]

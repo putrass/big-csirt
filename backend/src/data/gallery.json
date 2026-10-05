@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "imageUrl": "/assets/gallery-1-Dw-hkkPo.png",
+    "caption": "Kegiatan 1"
+  },
+  {
+    "id": "2",
+    "imageUrl": "/assets/gallery-2-kXKk9Ygw.png",
+    "caption": "Kegiatan 2"
+  },
+  {
+    "id": "3",
+    "imageUrl": "/assets/gallery-3-D0wMoKTO.png",
+    "caption": "Kegiatan 3"
+  },
+  {
+    "id": "4",
+    "imageUrl": "/assets/gallery-4-yCTvLm5t.png",
+    "caption": "Kegiatan 4"
+  }
+]

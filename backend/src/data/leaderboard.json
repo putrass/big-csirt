@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "rank": 1,
+    "name": "Andi Pratama",
+    "points": 15000,
+    "findings": 42,
+    "badge": "Elite"
+  },
+  {
+    "id": "2",
+    "rank": 2,
+    "name": "Budi Santoso",
+    "points": 12500,
+    "findings": 35,
+    "badge": "Expert"
+  },
+  {
+    "id": "3",
+    "rank": 3,
+    "name": "Citra Dewi",
+    "points": 9800,
+    "findings": 28,
+    "badge": "Expert"
+  },
+  {
+    "id": "4",
+    "rank": 4,
+    "name": "Dian Saputra",
+    "points": 7600,
+    "findings": 21,
+    "badge": "Advanced"
+  },
+  {
+    "id": "5",
+    "rank": 5,
+    "name": "Eka Putri",
+    "points": 5200,
+    "findings": 15,
+    "badge": "Intermediate"
+  }
+]

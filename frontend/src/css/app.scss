@@ -1,0 +1,58 @@
+:root {
+  --navy: #0a1628;
+  --navy-dark: #071120;
+  --blue: #1b4fd8;
+  --blue-deep: #1a3a6b;
+  --gray-text: #6b7280;
+}
+
+html {
+  /* Prevent scroll jumping on page reload */
+}
+
+body {
+  font-family: 'Geist', 'Schibsted Grotesk', ui-sans-serif, system-ui, sans-serif;
+  color: #111827;
+}
+
+.container-x {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-title {
+  font-family: 'Schibsted Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--navy);
+  margin: 0;
+}
+
+.section-eyebrow {
+  color: var(--blue);
+  font-weight: 700;
+  font-size: .8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.page-hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--blue-deep) 100%);
+  color: #fff;
+  padding: 3.5rem 0 2.5rem;
+}
+
+.rich-content {
+  line-height: 1.85;
+  color: #374151;
+
+  h2 { font-size: 1.4rem; font-weight: 700; margin: 1.5rem 0 .75rem; color: var(--navy); }
+  h3 { font-size: 1.15rem; font-weight: 700; margin: 1.2rem 0 .5rem; color: var(--navy); }
+  p { margin-bottom: 1rem; }
+  ul, ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+  img { max-width: 100%; height: auto; border-radius: 8px; }
+  pre { background: #f3f4f6; padding: 1rem; border-radius: 8px; overflow-x: auto; }
+  blockquote { border-left: 4px solid var(--blue); margin: 1rem 0; padding: .25rem 1rem; color: var(--gray-text); }
+}

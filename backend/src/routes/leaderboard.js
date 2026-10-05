@@ -1,0 +1,40 @@
+const router = require('express').Router();
+const { v4: uuidv4 } = require('uuid');
+const { read, write } = require('../utils/store');
+const { authMiddleware } = require('../middleware/auth');
+
+router.get('/', (req, res) => {
+  const items = read('leaderboard');
+  items.sort((a, b) => a.rank - b.rank);
+  res.json(items);
+});
+
+router.post('/', authMiddleware, (req, res) => {
+  const items = read('leaderboard');
+  const newItem = { id: uuidv4(), ...req.body };
+  items.push(newItem);
+  write('leaderboard', items);
+  res.status(201).json(newItem);
+});
+
+router.put('/:id', authMiddleware, (req, res) => {
+  const items = read('leaderboard');
+  const index = items.findIndex(i => i.id === req.params.id || i.id === parseInt(req.params.id));
+  if (index === -1) return res.status(404).json({ error: 'Not found' });
+  
+  items[index] = { ...items[index], ...req.body };
+  write('leaderboard', items);
+  res.json(items[index]);
+});
+
+router.delete('/:id', authMiddleware, (req, res) => {
+  let items = read('leaderboard');
+  const initialLength = items.length;
+  items = items.filter(i => i.id !== req.params.id && i.id !== parseInt(req.params.id));
+  if (items.length === initialLength) return res.status(404).json({ error: 'Not found' });
+  
+  write('leaderboard', items);
+  res.json({ message: 'Deleted successfully' });
+});
+
+module.exports = router;
