@@ -13,7 +13,7 @@
           </p>
         </div>
         <div class="w-28 h-28 md:w-36 md:h-36 flex-shrink-0">
-          <img src="/assets/logo-csirt-D9xGTNl_.png" alt="BIG-CSIRT Logo" class="w-full h-full object-contain filter drop-shadow-lg" />
+          <img :src="getAssetUrl('assets/logo-csirt-D9xGTNl_.png')" alt="BIG-CSIRT Logo" class="w-full h-full object-contain filter drop-shadow-lg" />
         </div>
       </div>
     </section>
@@ -97,6 +97,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue';
 import { getAdvisories } from '@/services/api';
+import { getAssetUrl } from '@/utils/assets';
 
 const advisories = ref<any[]>([]);
 const loading = ref(true);

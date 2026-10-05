@@ -13,7 +13,7 @@
           </p>
         </div>
         <div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0">
-          <img src="/assets/logo-csirt-D9xGTNl_.png" alt="BIG-CSIRT Logo" class="w-full h-full object-contain filter drop-shadow-lg" />
+          <img :src="getAssetUrl('assets/logo-csirt-D9xGTNl_.png')" alt="BIG-CSIRT Logo" class="w-full h-full object-contain filter drop-shadow-lg" />
         </div>
       </div>
     </section>
@@ -152,5 +152,5 @@
 </template>
 
 <script setup lang="ts">
-// ProfilePage
+import { getAssetUrl } from '@/utils/assets';
 </script>

@@ -13,7 +13,7 @@
           </p>
         </div>
         <div class="w-28 h-28 md:w-36 md:h-36 flex-shrink-0">
-          <img src="/assets/logo-csirt-D9xGTNl_.png" alt="BIG-CSIRT Logo" class="w-full h-full object-contain filter drop-shadow-lg" />
+          <img :src="getAssetUrl('assets/logo-csirt-D9xGTNl_.png')" alt="BIG-CSIRT Logo" class="w-full h-full object-contain filter drop-shadow-lg" />
         </div>
       </div>
     </section>
@@ -64,7 +64,7 @@
           <div>
             <div class="h-48 overflow-hidden relative bg-gray-100">
               <img
-                :src="item.imageUrl || item.image || '/assets/news-featured-DEHxhDd0.png'"
+                :src="item.imageUrl || item.image || getAssetUrl('assets/news-featured-DEHxhDd0.png')"
                 :alt="item.title"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
@@ -108,6 +108,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue';
 import { fetchArticles } from '@/services/api';
+import { getAssetUrl } from '@/utils/assets';
 
 const news = ref<any[]>([]);
 const loading = ref(true);

@@ -8,10 +8,10 @@
           <!-- Logo BIG & CSIRT -->
           <div class="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
             <div class="h-[32px] w-[28px] sm:h-[42px] sm:w-[38px] flex-shrink-0">
-              <img src="/assets/logo-big-crCCDRIX.png" alt="Badan Informasi Geospasial Logo" class="w-full h-full object-contain" />
+              <img :src="getAssetUrl('assets/logo-big-crCCDRIX.png')" alt="Badan Informasi Geospasial Logo" class="w-full h-full object-contain" />
             </div>
             <div class="w-[36px] h-[36px] sm:w-[50px] sm:h-[50px] flex-shrink-0">
-              <img src="/assets/logo-csirt-D9xGTNl_.png" alt="CSIRT Logo" class="w-full h-full object-contain" />
+              <img :src="getAssetUrl('assets/logo-csirt-D9xGTNl_.png')" alt="CSIRT Logo" class="w-full h-full object-contain" />
             </div>
           </div>
           <!-- Title Branding -->
@@ -149,7 +149,7 @@
         <div class="flex flex-col gap-6 lg:col-span-2">
           <div class="flex items-center gap-3">
             <div class="w-[64px] h-[64px] sm:w-[80px] sm:h-[80px] flex-shrink-0 bg-white p-1 rounded-xl shadow-md">
-              <img src="/assets/logo-csirt-D9xGTNl_.png" alt="CSIRT Logo" class="w-full h-full object-contain" />
+              <img :src="getAssetUrl('assets/logo-csirt-D9xGTNl_.png')" alt="CSIRT Logo" class="w-full h-full object-contain" />
             </div>
             <div class="flex flex-col">
               <span class="font-grotesk font-extrabold text-[22px] sm:text-[26px] text-white leading-tight">
@@ -212,7 +212,7 @@
               Syarat &amp; Ketentuan
             </router-link>
             <div class="w-[20px] h-[12px] flex-shrink-0">
-              <img src="/assets/flag-UQ417Inh.png" alt="Country Flag" class="w-full h-full object-contain" />
+              <img :src="getAssetUrl('assets/flag-UQ417Inh.png')" alt="Country Flag" class="w-full h-full object-contain" />
             </div>
           </div>
         </div>
@@ -223,6 +223,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import { getAssetUrl } from '@/utils/assets';
 
 const mobileMenuOpen = ref(false);
 </script>

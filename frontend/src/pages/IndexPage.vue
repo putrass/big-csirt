@@ -2,7 +2,7 @@
   <q-page class="w-full overflow-x-hidden">
     <!-- 1. Hero Section (Responsive height & typography) -->
     <section class="relative w-full bg-gradient-to-r from-[#0a1628] to-[#1a3a6b] overflow-hidden min-h-[420px] md:min-h-[calc(100vh-136px)] flex items-center justify-center">
-      <div class="absolute inset-0 bg-cover bg-center opacity-25 mix-blend-overlay pointer-events-none transition-all duration-700" :style="{ backgroundImage: `url(${about.heroBg || '/assets/bg-map-DqRDIy-6.png'})` }"></div>
+      <div class="absolute inset-0 bg-cover bg-center opacity-25 mix-blend-overlay pointer-events-none transition-all duration-700" :style="{ backgroundImage: `url(${about.heroBg || getAssetUrl('assets/bg-map-DqRDIy-6.png')})` }"></div>
       <div class="max-w-[1440px] mx-auto w-full px-4 sm:px-6 md:px-8 xl:px-12 py-12 md:py-16 flex flex-col items-center justify-center text-center relative z-10">
         <div class="max-w-[960px] flex flex-col items-center gap-4 sm:gap-6">
           <h1 class="font-grotesk font-extrabold text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-[76px] text-white leading-tight tracking-tight">
@@ -67,7 +67,7 @@
         <!-- Kolom Gambar / Logo (Kanan - di sebelah teks) -->
         <div class="md:col-span-5 lg:col-span-4 flex justify-center md:justify-end items-center order-2">
           <div class="w-[260px] h-[260px] sm:w-[320px] sm:h-[320px] md:w-[360px] md:h-[360px] lg:w-[420px] lg:h-[420px] relative hover:scale-105 transition-transform duration-500">
-            <img src="/assets/logo-csirt-D9xGTNl_.png" alt="BIG-CSIRT Logo" class="w-full h-full object-contain" />
+            <img :src="about.logoSrc || getAssetUrl('assets/logo-csirt-D9xGTNl_.png')" alt="BIG-CSIRT Logo" class="w-full h-full object-contain" />
           </div>
         </div>
       </div>
@@ -89,7 +89,7 @@
           <!-- Featured News Card (Left 2 cols) -->
           <div class="lg:col-span-2 bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md border border-gray-100 transition-shadow flex flex-col md:flex-row" v-if="featuredArticle">
             <div class="w-full md:w-[40%] h-[240px] md:h-auto min-h-[240px] relative">
-              <img :src="featuredArticle.imageUrl || '/assets/news-featured-DEHxhDd0.png'" :alt="featuredArticle.title" class="absolute inset-0 w-full h-full object-cover" />
+              <img :src="featuredArticle.imageUrl || getAssetUrl('assets/news-featured-DEHxhDd0.png')" :alt="featuredArticle.title" class="absolute inset-0 w-full h-full object-cover" />
             </div>
             <div class="w-full md:w-[60%] p-6 md:p-8 flex flex-col justify-between gap-6">
               <div class="flex flex-col gap-3">
@@ -199,7 +199,7 @@
 
     <!-- 6. Edukasi & Kesadaran Keamanan Siber -->
     <section id="edukasi" class="relative w-full bg-gradient-to-r from-[#0a1628] to-[#1a3a6b] py-20 text-white overflow-hidden reveal-on-scroll">
-      <div class="absolute inset-0 bg-cover bg-center opacity-15 mix-blend-overlay pointer-events-none" style="background-image: url('/assets/bg-map-DqRDIy-6.png')"></div>
+      <div class="absolute inset-0 bg-cover bg-center opacity-15 mix-blend-overlay pointer-events-none" :style="{ backgroundImage: `url(${getAssetUrl('assets/bg-map-DqRDIy-6.png')})` }"></div>
       <div class="max-w-[1440px] mx-auto px-4 md:px-8 xl:px-12 flex flex-col gap-10 relative z-10">
         <div class="text-center flex flex-col gap-3">
           <span class="text-blue-300 font-geist text-xs font-bold uppercase tracking-widest">LITERASI &amp; KEAMANAN SIBER</span>
@@ -289,6 +289,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue';
 import { fetchAbout, fetchArticles, getAdvisories, getEducation, fetchGallery } from '@/services/api';
+import { getAssetUrl } from '@/utils/assets';
 
 const about = ref<any>({ body: [] });
 const articles = ref<any[]>([]);
