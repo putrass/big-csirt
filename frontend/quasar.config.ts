@@ -7,7 +7,7 @@ import { dirname, resolve } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-export default defineConfig((/* ctx */) => {
+export default defineConfig((ctx) => {
   return {
     // https://v2.quasar.dev/quasar-cli-vite/prefetch-feature
     // preFetch: true,
@@ -55,7 +55,7 @@ export default defineConfig((/* ctx */) => {
       vueRouterMode: 'hash', // available values: 'hash', 'history'
       // vueRouterBase,
 
-      publicPath: process.env.NODE_ENV === 'production' ? '/big-csirt/' : '/',
+      publicPath: ctx.prod ? '/big-csirt/' : '/',
       // define: {},
       // defineEnv: {}
       // ignorePublicFolder: true,
