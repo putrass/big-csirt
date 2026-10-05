@@ -1,5 +1,33 @@
 [
   {
+    "id": null,
+    "createdAt": "2026-10-05T16:16:03.602Z",
+    "title": "Tesss",
+    "slug": "tesss",
+    "category": "INSIDEN",
+    "type": "standard",
+    "date": "5 Oktober 2026",
+    "imageUrl": "http://localhost:3000/uploads/img-1791216959686-381950735.png",
+    "description": "",
+    "body": "Tes",
+    "image": "http://localhost:3000/uploads/img-1791216959686-381950735.png",
+    "excerpt": ""
+  },
+  {
+    "id": null,
+    "createdAt": "2026-10-05T16:14:57.033Z",
+    "title": "Tes Doang",
+    "slug": "tes-doang",
+    "category": "INSIDEN",
+    "type": "standard",
+    "date": "5 Oktober 2026",
+    "imageUrl": "http://localhost:3000/uploads/img-1791216891778-802708548.png",
+    "description": "",
+    "body": "Tes",
+    "image": "http://localhost:3000/uploads/img-1791216891778-802708548.png",
+    "excerpt": ""
+  },
+  {
     "id": "article-tes-ya",
     "createdAt": "2026-10-05T06:41:38.103Z",
     "title": "Tes Ya",

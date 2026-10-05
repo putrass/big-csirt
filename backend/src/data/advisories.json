@@ -5,7 +5,7 @@
     "cveId": "CVE-2025-24911",
     "title": "Protection Mechanism Failure - Testing",
     "severity": "Kritis",
-    "status": "Selesai",
+    "status": "Dalam Penanganan",
     "body": "<p>Kerentanan kritis pada mekanisme proteksi sistem yang memungkinkan eksekusi kode berbahaya tanpa otentikasi.</p>",
     "advisoryId": "CVE-2025-24911"
   },
