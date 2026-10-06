@@ -81,8 +81,8 @@ async function doLogin() {
   loading.value = true;
   error.value = '';
   try {
-    // If user enters 'admin', convert to seeded email 'admin@komdigi.go.id'
-    const loginUser = email.value === 'admin' ? 'admin@komdigi.go.id' : email.value;
+    // If user enters 'admin', convert to seeded email 'csirt@big.go.id'
+    const loginUser = email.value === 'admin' ? 'csirt@big.go.id' : email.value;
     await auth.login(loginUser, password.value);
     router.push('/bug-hunter/dashboard');
   } catch (e: any) {

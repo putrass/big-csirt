@@ -97,7 +97,7 @@ const form = ref({ name: '', email: '', subject: '', message: '' });
 
 const contactInfo = [
   { icon: 'place',    label: 'Alamat',  value: 'Jl. Medan Merdeka Barat No.9, Jakarta Pusat, DKI Jakarta 10110' },
-  { icon: 'email',    label: 'Email',   value: 'csirt@komdigi.go.id' },
+  { icon: 'email',    label: 'Email',   value: 'csirt@big.go.id' },
   { icon: 'phone',    label: 'Telepon', value: '(021) 3860-666' },
   { icon: 'schedule', label: 'Jam Operasional', value: 'Senin – Jumat, 08.00 – 17.00 WIB' },
 ];
