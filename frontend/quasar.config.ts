@@ -55,7 +55,7 @@ export default defineConfig((ctx) => {
       vueRouterMode: 'hash', // available values: 'hash', 'history'
       // vueRouterBase,
 
-      publicPath: ctx.prod ? '/big-csirt/' : '/',
+      publicPath: process.env.PUBLIC_PATH || (process.env.VERCEL ? '/' : (ctx.prod ? '/big-csirt/' : '/')),
       // define: {},
       // defineEnv: {}
       // ignorePublicFolder: true,

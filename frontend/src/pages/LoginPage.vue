@@ -72,8 +72,8 @@ import { getAssetUrl } from '@/utils/assets';
 const router = useRouter();
 const auth = useAuthStore();
 
-const email = ref('admin@komdigi.go.id');
-const password = ref('admin123');
+const email = ref(import.meta.env.VITE_DEFAULT_ADMIN_EMAIL || '');
+const password = ref(import.meta.env.VITE_DEFAULT_ADMIN_PASSWORD || '');
 const loading = ref(false);
 const error = ref('');
 
