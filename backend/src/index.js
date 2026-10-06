@@ -6,6 +6,13 @@ app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static('uploads'));
 
+app.get('/', (req, res) => {
+  res.json({ status: 'ok', service: 'BIG-CSIRT API', time: new Date().toISOString() });
+});
+app.get('/api', (req, res) => {
+  res.json({ status: 'ok', service: 'BIG-CSIRT API', time: new Date().toISOString() });
+});
+
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/pages', require('./routes/pages'));
 app.use('/api/leaderboard', require('./routes/leaderboard'));
