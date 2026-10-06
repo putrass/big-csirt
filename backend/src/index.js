@@ -24,6 +24,10 @@ app.use('/api/about', require('./routes/about'));
 app.use('/api/nav', require('./routes/nav'));
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Backend server running on port ${port}`);
-});
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+  app.listen(port, () => {
+    console.log(`Backend server running on port ${port}`);
+  });
+}
+
+module.exports = app;
