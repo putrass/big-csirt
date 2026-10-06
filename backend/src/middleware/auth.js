@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const SECRET = process.env.JWT_SECRET || 'csirt-komdigi-secret-2024';
+const SECRET = process.env.JWT_SECRET || 'big-csirt-secret-key-2026';
 
 function authMiddleware(req, res, next) {
   const auth = req.headers.authorization;
